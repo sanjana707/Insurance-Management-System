@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: black;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: #f1f1f1;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #2e7831;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form action="register.jsp">  
+    <div class="container">  
+    <center><h1>Registration Form</h1> </center>  
+    <hr>  
+
+    <label>Insurance ID: </label>   
+    <input type="text" name="insurance" placeholder= "IN0001" size="15" required />      
+
+    <label>First name: </label>   
+    <input type="text" name="firstname" placeholder= "First name" size="15" required />      
+
+    <label>Last name: </label>   
+    <input type="text" name="lastname" placeholder= "Last name" size="15" required />
+    
+    <label>Password: </label>   
+    <input type="password" name="password" placeholder= "A@123" size="15" required />
+
+    <br>    
+    Company Name :  
+    <input type="text" name="CompanyName" placeholder="Company Name"  value="" size="2"/>
+    <div style="display:block">
+        <label for="Start Date">Start Date: </label><br>
+        <input style="gap:10px;" type="date" id="Start Date" name="StartDate">
+    </div>
+    <div style="display:block">
+        <label for="End Date">End Date: </label><br>
+        <input style="gap:10px;" type="date" id="End Date" name="EndDate">
+    </div>
+    <label> Installments: </label>   
+    <input type="text" name="installment" placeholder= "Installments" size="15" required />      
+    <label>  
+      </div>   
+    <input type="submit">
+    
+</form>  
+</body>  
+</html>
+
